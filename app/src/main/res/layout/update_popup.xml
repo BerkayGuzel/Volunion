@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/backgroundColor"
+                android:gravity="center"
+                android:text="Güncelleme"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ifForgotWriteMailCompanyLoginTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_back"
+                android:gravity="center_vertical"
+                app:counterMaxLength="10">
+
+
+                <EditText
+                    android:id="@+id/nameTextAdminRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:hint="Konu"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_back"
+                android:gravity="center_vertical"
+                app:counterMaxLength="10">
+
+
+                <EditText
+                    android:id="@+id/desTextAdminRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:hint="Hakkında"
+                    android:inputType="textMultiLine"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageUrlAdminRow"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="URL"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/editPopUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_btn"
+                    android:text="Güncelle"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/deletePopUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/delete_back"
+                    android:text="SİL"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

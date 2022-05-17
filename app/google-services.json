@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "612609748479",
+    "project_id": "projectvolunion-836b8",
+    "storage_bucket": "projectvolunion-836b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612609748479:android:ee108fcc68817a26f7cbca",
+        "android_client_info": {
+          "package_name": "project.volunion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612609748479-1c81o26osi7nc1lmrij1hfhoclkugr1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBV7IXCrJa_1puNxkFn-IrqfNyqwYoNB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612609748479-1c81o26osi7nc1lmrij1hfhoclkugr1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

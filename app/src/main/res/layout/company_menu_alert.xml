@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutDialogContainer"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KURUM"
+                android:padding="10dp"
+                android:textColor="@color/backgroundColor"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/createActivityBtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textSize="24dp"
+                android:text="Etkinlik Oluştur"
+                android:background="@drawable/rounded_btn_2"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:id="@+id/companyUsers"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textSize="24dp"
+                android:text="Kayıtlı Gönüllüler"
+                android:background="@drawable/rounded_btn_2"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:id="@+id/signOutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/delete_back"
+                android:layout_margin="15dp"
+                android:textSize="24dp"
+                android:text="Çıkış Yap"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+           />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
+
+
+
+<!--</androidx.appcompat.widget.LinearLayoutCompat>-->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/companyName"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:layout_margin="10dp"
+    android:background="@drawable/white_round_back"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:ems="10" />

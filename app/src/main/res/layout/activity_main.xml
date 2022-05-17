@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    tools:context="project.volunion.MainActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLUNION"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/voluntarilyLogInBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="GÖNÜLLÜ GİRİŞİ"
+           />
+
+        <Button
+            android:id="@+id/voluntarilySignUpBtn"
+            android:layout_weight="1"
+            android:background="@drawable/rounded"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:text="Gönüllü Kayıt"
+             />
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/font"
+            android:background="@drawable/rounded"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:text="Hesaptan çıkış"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/companyLogInBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="KURUM GİRİŞİ"
+          />
+
+        <Button
+            android:id="@+id/contactUsBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="BİZE ULAŞIN"
+            android:textAllCaps="false"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/dashboard"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Ana sayfa"
+            android:fontFamily="@font/font"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

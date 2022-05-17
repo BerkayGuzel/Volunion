@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:layout_height="match_parent"
+    tools:context="project.volunion.view.LogInCompanyActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_back"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KURUM GİRİŞİ"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/companyMailLogInTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_back"
+        app:counterMaxLength="10"
+        >
+
+
+        <EditText
+            android:id="@+id/mailCompanyLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ifForgotWriteMailCompanyLoginTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:background="@drawable/btn_back"
+        app:counterMaxLength="10"
+        >
+
+
+        <EditText
+            android:id="@+id/mailCompanyLogInForgot"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Kayıtlı olan mail giriniz"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordCompanyLogInTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:layout_margin="20dp"
+        app:passwordToggleEnabled="true"
+        android:background="@drawable/btn_back"
+        app:counterMaxLength="10"
+        >
+
+
+        <EditText
+            android:id="@+id/passwordCompanyLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/loginCompanyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Kurum Giriş"
+        android:clickable="true"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_btn"
+  />
+
+    <Button
+        android:id="@+id/changePasswordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Şifreyi yenile"
+        android:visibility="gone"
+        android:background="@drawable/rounded_btn"
+
+        />
+
+
+    <Button
+        android:id="@+id/forgotPasswordBtnCompanyLogIn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Şifremi Unuttum"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_btn"
+
+        />
+
+    <Button
+        android:id="@+id/addCompany"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Kurum Ekle"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_btn"
+
+        />
+
+    <Button
+        android:id="@+id/enterAdmin"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Admin Giriş"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:background="@drawable/rounded_btn"
+
+        />
+
+    <Button
+        android:id="@+id/enterCompany"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Kuruma Giriş"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_btn"
+
+        />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
